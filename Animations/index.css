@@ -1,0 +1,46 @@
+body{
+  height:100vh;
+}
+
+/* div{
+  height: 100%
+} */
+
+div:hover {
+ 
+  animation-name: baby; /*ye zaroori plus is k neeche wala bhi*/
+  animation-duration: 10s; /*irrespective of the unit*/
+  animation-iteration-count: 1; /* redundancy of animation*/
+  animation-delay: 2s; /*trigger krne mein aur chlne mein ktna tym hai*/
+  animation-fill-mode: backwards; /*default pe aaye ya nai foreward and both pe 100% wali ko retain kre ga.backward pe wh default pe aaye ga. */
+  animation-timing-function: linear; /*ease in mein shuru mein tez akhir mei slow. linear usko barabar rakhe ga.*/
+
+}
+/* 0-100% actually is duration ko itne hisse mein tor de ga means 1s mei 0.01 ka frae bane ga   */
+@keyframes baby {
+  0% {
+    background-color: green;
+    /* height: 25%;
+    font-size: 30px; */
+  }
+  25% {
+    background-color: blue;
+    height:50%;
+    font-size: 20px;
+    
+  }
+  50% {
+    background-color: red;
+    color: purple;
+    height: 75%;
+    font-size: 30px;
+    
+  }
+  100% {
+    background-color: yellow;
+    color: red;
+    height: 100%;
+    font-size:40px;
+    
+  }
+}
